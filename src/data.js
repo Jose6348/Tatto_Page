@@ -34,4 +34,18 @@ export default [
       description: 'Tatuagem de mandala em pontilhismo.',
       category: 'Pontilhismo',
     },
+    {
+      id: 6,
+      image: 'https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/pontilhismo-tatuagens-3.png?raw=true',
+      name: 'Tatuagem Pontilhismo',
+      description: 'Tatuagem de mandala em pontilhismo.',
+      category: 'Pontilhismo',
+    },
+    {
+      id: 7,
+      image: 'https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/pontilhismo-tatuagens-3.png?raw=true',
+      name: 'Tatuagem Pontilhismo',
+      description: 'Tatuagem de mandala em pontilhismo.',
+      category: 'Pontilhismo',
+    },
   ];

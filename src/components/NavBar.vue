@@ -22,9 +22,6 @@
             <router-link to="/artistas" class="nav-link">Artistas</router-link> 
           </li>
           <li class="nav-item">
-            <router-link to="/estilos" class="nav-link">Estilos</router-link> 
-          </li>
-          <li class="nav-item">
             <router-link to="/contato" class="nav-link">Contato</router-link> 
           </li>
         </ul>
@@ -53,7 +50,7 @@ export default {
 
 <style scoped>
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2); /* Fundo transparente com leve opacidade */
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo transparente com leve opacidade */
   transition: background-color 0.3s ease; /* Suavidade na transição */
 }
 

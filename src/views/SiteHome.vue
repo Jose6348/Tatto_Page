@@ -8,7 +8,7 @@
       <div class="hero-content text-start"> 
         <h1 class="display-4">PIONEIRISMO E MODERNIDADE <br> EM CADA TRAÇO</h1>
         <p class="lead">Pure Art</p>
-        <router-link to="/estudio" class="btn btn-lg btn-outline-light">VEJA NOSSAS TATTOOS</router-link>
+        <router-link to="/servicos" class="btn btn-lg btn-outline-light">VEJA NOSSAS TATTOOS</router-link>
       </div>
     </div>
   </div>
