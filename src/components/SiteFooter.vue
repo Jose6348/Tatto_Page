@@ -4,7 +4,7 @@
       <div class="top-footer">
         <div class="social-icons">
           <h3 class="section-title">Siga-nos no Instagram</h3>
-          <a href="https://www.instagram.com/sergioledstattoo/" target="_blank" class="social-link">
+          <a href="https://www.instagram.com/ferracin_tattoo/" target="_blank" class="social-link">
             <font-awesome-icon icon="fa-brands fa-instagram" />
           </a>
         </div>
@@ -12,8 +12,10 @@
       <div class="middle-footer">
         <div class="footer-info">
           <div class="logo-container">
-            <img src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/logo_branca.png?raw=true" alt="Logo Leds Tattoo" class="footer-logo" />
-            <p class="slogan">PURE ART</p>
+            <img
+              src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/Gemini_Generated_Image_xlzfyaxlzfyaxlzf.jpg?raw=true"
+              alt="Logo Leds Tattoo" class="footer-logo" />
+            <p class="slogan">FERRACIN TATTO</p>
           </div>
           <div class="contact-info">
             <div class="info-group">
@@ -29,14 +31,14 @@
             <div class="info-group">
               <h4 class="info-title">Contato</h4>
               <p class="info-text">
-                <font-awesome-icon icon="fa-solid fa-phone" class="info-icon" /> (11) 94486-3323
+                <font-awesome-icon icon="fa-solid fa-phone" class="info-icon" /> (19) 97165-2715
               </p>
               <p class="info-text">
                 <font-awesome-icon icon="fa-solid fa-envelope" class="info-icon" /> contato@ledstattoo.com.br
               </p>
             </div>
             <div class="social-links-footer">
-              <a href="https://www.instagram.com/sergioledstattoo/" target="_blank" class="social-link-footer">
+              <a href="https://www.instagram.com/ferracin_tattoo/" target="_blank" class="social-link-footer">
                 <font-awesome-icon icon="fa-brands fa-instagram" />
               </a>
               <a href="#" target="_blank" class="social-link-footer">
@@ -48,18 +50,22 @@
       </div>
       <div class="bottom-footer">
         <p class="copyright">
-          2022 © Todos os Direitos Reservados | Política de Privacidade
+          2025 © Todos os Direitos Reservados | Política de Privacidade
         </p>
         <div class="developed-by">
           <p>Desenvolvido por:</p>
-          <img src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/Superix-logo-branca.png?raw=true" alt="Logo Superix" class="superix-logo" />
+          <a
+            href="https://wa.me/+5519996459448?text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os">
+            <img src="https://github.com/Jose6348/Images_Projects/blob/main/Minha%20logo/image%20(1).jpg?raw=true"
+              alt="Logo Superix" class="superix-logo" />
+          </a>
         </div>
       </div>
     </div>
     <div class="whatsapp-button-container">
-      <a href="https://wa.me/5511996459448" target="_blank" class="whatsapp-button">
+      <a href="https://wa.me/5519971652715" target="_blank" class="whatsapp-button">
         <font-awesome-icon icon="fa-brands fa-whatsapp" />
-        <span>Agende sua tattoo pelo Whatsapp</span>
+        <span class=""> Whatsapp</span>
       </a>
     </div>
   </footer>
@@ -80,8 +86,8 @@ export default {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-footer {
@@ -133,7 +139,8 @@ export default {
 }
 
 .footer-logo {
-  width: 150px;
+  width: 300px;
+  height: auto;
   margin-bottom: 10px;
 }
 
@@ -171,19 +178,19 @@ export default {
   color: #f5b74f;
 }
 
-.social-links-footer{
+.social-links-footer {
   margin-top: 15px;
 }
 
-.social-link-footer{
-    color: #fff;
-    font-size: 1.5rem;
-    margin-right: 10px;
-    transition: color 0.3s ease;
+.social-link-footer {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
 }
 
-.social-link-footer:hover{
-    color: #f5b74f;
+.social-link-footer:hover {
+  color: #f5b74f;
 }
 
 .bottom-footer {
@@ -214,22 +221,22 @@ export default {
   width: 100px;
 }
 
-.whatsapp-button-container{
-    background-color: #25d366;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.whatsapp-button-container {
+  background-color: #25d366;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.whatsapp-button-container:hover{
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+.whatsapp-button-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .whatsapp-button {
@@ -237,6 +244,8 @@ export default {
   align-items: center;
   color: #fff;
   text-decoration: none;
+  margin-right: 5px;
+  
 }
 
 .whatsapp-button i {
@@ -261,24 +270,24 @@ export default {
   }
 
   .developed-by {
-      margin-top: 15px;
+    margin-top: 15px;
   }
 
-  .bottom-footer{
-      flex-direction: column;
-      align-items: center;
+  .bottom-footer {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .top-footer{
-      border: none;
+  .top-footer {
+    border: none;
   }
 
-  .social-icons{
-      flex-direction: row;
+  .social-icons {
+    flex-direction: row;
   }
 
-  .section-title{
-      margin-right: 20px;
+  .section-title {
+    margin-right: 20px;
   }
 }
 </style>
