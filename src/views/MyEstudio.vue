@@ -26,23 +26,15 @@
         </p>
       </div>
       <div class="studio-images">
-        <img src="" alt="Imagem do Estúdio 1" />
-        <img src="" alt="Imagem do Estúdio 2" />
-        <img src="" alt="Imagem do Estúdio 3" />
+        <img src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/estudio.jpg?raw=true" alt="Imagem do Estúdio 1" />
+        <img src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/Image%20ferracin.jpg?raw=true" alt="Imagem do Estúdio 2" />
+        <img src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/front%20estudio.jpg?raw=true" alt="Imagem do Estúdio 3" />
       </div>
     </div>
-    <div class="artists-section">
-      <h2>Nossos Artistas</h2>
-      <div class="artist-profiles">
-        <div class="artist-profile">
-          <img src="foto-artista-1.jpg" alt="Foto do Artista 1" />
-          <h3>Nome do Artista 1</h3>
-          <p>Especialidades: Estilo 1, Estilo 2, Estilo 3</p>
-        </div>
+   
       
       </div>
-    </div>
-  </div>
+  
 </template>
 
 <script>
@@ -73,7 +65,8 @@ h1 {
 }
 
 .studio-images {
-  width: 40%;
+  height: auto;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
