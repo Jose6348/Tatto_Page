@@ -26,7 +26,7 @@ export default {
     openWhatsApp(product) {
       const message = `Olá, gostaria de fazer um orçamento da tatuagem "${product.name}"`;
       const encodedMessage = encodeURIComponent(message);
-      const whatsappLink = `https://wa.me/5519996459448?text=${encodedMessage}`;
+      const whatsappLink = `https://wa.me/5519971652715?text=${encodedMessage}`;
       window.open(whatsappLink, '_blank');
     },
   },
