@@ -34,32 +34,12 @@ export default {
     return {
       artistas: [
         {
-          nome: "Sérgio Leds",
-          foto: "https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/sergio-leds-tattoo.jpg?raw=true",
+          nome: "Gabriel Ferracin",
+          foto: "https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/gabrielferracin-20250115-0001.jpg?raw=true",
           especialidade: "Tatuagens de diversos estilos",
           descricao:
-            "Sérgio é um tatuador experiente com mais de 20 anos de experiência. Ele é especialista em diversos estilos, incluindo realismo, old school e aquarela.",
-          instagram: "https://www.instagram.com/sergioledstattoo/",
-          facebook: null,
-          portfolio: null,
-        },
-        {
-          nome: "João",
-          foto: "https://s3-alpha-sig.figma.com/img/f7eb/874f/5570857c4d497d7c7547d5d877999279?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Tjxp7lP57x85CEBws6Aq~OVZ4xRAO9t5tA-oPq-k9EfdFh6~tRQ1~kYq7M3~fQ9y7Qh2L-~GfGk3o1g~O6KjM-BQD9-6I42p8e2oXpI1c6oZf9QYk-Jv6r2DdgQO505g2wFq45Yp2X5v-d6ZJ42xZ~-e7~e9o1eL~z4O6eT59fQp3c~Lw-~3q15Y9q2Z80P-H3-qM5qP9O8a1xYt~4xL6o6H-QjR~Z8zTfOqj3l26k7~CgW5R8VfGg-E9fP7sL60Q-T~qPj96U9R07zS9O2g~x3wN-F3fWwS-2m3jC4G-X5n4~f8UoX24yP5~5V~5K1v-8aFw957tXw0R~jI~-V7r2F5Q84r4rK1w8w2c1e544eKz0-Z~iH5y7L0jF6H55kUeH9Yw-yT79a3q9X5-q0vj5Zp3z-T58K~o-o5QJ8W~G7YmU3506LwE6J9O-I3b6xX5s~XwP4w05Vn0GkZ5-j2Zp2rLgJ2R6fT1mJ3dF-yLzYh8~uX5l5xJjY1c9xW7Z-G65~s9GfD5f4e78pT9~eY-~AUs0kQ4G-596jY7z~92s7-s0YJmDk9oZ8f3~f2~a7V0nF1jX8hH903u2d99h8s3m~Q-G7f5d8-e1h1o9w__",
-          especialidade: "Tatuagens minimalistas e geométricas",
-          descricao:
-            "João é um tatuador talentoso que se especializou em tatuagens minimalistas e geométricas. Seu trabalho é limpo, preciso e elegante.",
-          instagram: null,
-          facebook: null,
-          portfolio: null,
-        },
-        {
-          nome: "Pedro",
-          foto: "https://avatars.githubusercontent.com/u/50575308?v=4",
-          especialidade: "Tatuagens Old School",
-          descricao:
-            "Pedro é um tatuador apaixonado por tatuagens Old School. Ele domina as técnicas tradicionais e cria designs clássicos com um toque moderno.",
-          instagram: null,
+            "Gabriel é CEO da Ferracin tatto e um experiente tatuador tendo feito diversas artes tanto no Brasil como no Japão, mostrando seu talento para as mais diversas culturas. .",
+          instagram: "https://www.instagram.com/ferracin_tattoo/",
           facebook: null,
           portfolio: null,
         },
@@ -73,44 +53,75 @@ export default {
 .artists-page {
   padding: 20px;
   margin-top: 7em;
+  /*background-color: #f8f8f8;  Cor de fundo suave */
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png"); /* Textura de concreto */
 }
 
 .page-title {
   text-align: center;
   margin-bottom: 40px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
+  color: #333; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .artists-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 40px;
 }
 
 .artist-card {
   border: none;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff; 
 }
 
 .artist-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
 }
 
 .artist-image-container {
   width: 100%;
-  height: 300px;
+  height: auto;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative; /* Para o efeito de overlay */
 }
 
 .artist-image {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  max-height: 400px; 
+  transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.artist-image-container:hover .artist-image {
+  transform: scale(1.1); /* Efeito de zoom na imagem */
+}
+
+/* Overlay com gradiente */
+.artist-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent); /* Gradiente */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.artist-image-container:hover::before {
+  opacity: 1; /* Visível no hover */
 }
 
 .artist-info {
@@ -118,38 +129,42 @@ export default {
 }
 
 .artist-name {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .artist-specialty {
-  font-size: 1.2rem;
-  color: #777;
+  font-size: 1.4rem;
+  color: #666;
   margin-bottom: 15px;
+  font-style: italic;
 }
 
 .artist-description {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #555;
   margin-bottom: 20px;
   text-align: justify;
+  line-height: 1.6; 
 }
 
 .artist-social-links {
   display: flex;
   justify-content: flex-start;
+  margin-top: 20px;
 }
 
 .social-link {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 20px;
   color: #555;
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: color 0.3s ease;
 }
 
 .social-link:hover {
-  color: #f5b74f;
+  color: #f5b74f; 
 }
 </style>
