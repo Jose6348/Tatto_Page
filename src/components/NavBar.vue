@@ -3,7 +3,7 @@
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="/">
         <img 
-          src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/Gemini_Generated_Image_xlzfyaxlzfyaxlzf.jpg?raw=true" 
+          src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/logoFerracin.png?raw=true" 
           
           alt="Logo do Estúdio" 
           class="img-fluid logo"
@@ -46,16 +46,15 @@
 <style scoped>
 /* Fundo gradiente e sombras suaves */
 .custom-navbar {
-  background: linear-gradient(45deg, rgba(34, 34, 34, 0.6), rgba(16, 16, 16, 0.6));
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, rgba(34, 34, 34, 0.1), rgba(16, 16, 16, 0.1));
   backdrop-filter: blur(8px);
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 .custom-navbar .navbar-brand .logo {
-  height: 80px; 
+  height: 100px; 
   width: auto;
-  border-radius: 50px;
+  border-radius: 20px;
   border: 2px solid #ffffff;
   transition: transform 0.3s ease;
 }
@@ -67,8 +66,7 @@
 .nav-link {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #ffffff;
-  padding: 1rem 1.5rem;
+  color: #505050;
   transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
   position: relative;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -109,9 +107,8 @@
 /* Responsividade para dispositivos menores */
 @media (max-width: 991.98px) {
   .custom-navbar {
-    background: #222222;
+    background: #424242;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
   }
 
   .navbar-nav {
@@ -124,6 +121,7 @@
     text-align: left; /* Alinhamento à esquerda para melhor legibilidade */
     margin: 0;
     width: 100%; /* Garantir que cada item ocupa toda a largura */
+    color: white;
   }
 
   .navbar-collapse {
