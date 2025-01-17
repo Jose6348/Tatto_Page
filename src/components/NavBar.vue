@@ -3,7 +3,7 @@
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="/">
         <img 
-          src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/logoFerracin.png?raw=true" 
+          src="https://raw.githubusercontent.com/Jose6348/Images_Projects/5329324e34ecd170d149d61978c4127fd4279c96/Tatto_page/logoFerracin.svg" 
           
           alt="Logo do Estúdio" 
           class="img-fluid logo"
@@ -43,19 +43,45 @@
   </nav>
 </template>
 
+<script>
+export default {
+  mounted() {
+    // Selecionando o elemento do menu no DOM
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-item .nav-link');
+    const navbarToggle = document.querySelector('.navbar-toggler');
+
+    // Adicionando evento de clique a cada link de navegação
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Fecha o menu
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+          navbarToggle.click(); // Simula um clique no botão de toggle para fechar o menu
+        }
+
+        // Rolagem para o topo
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Rolagem suave
+        });
+      });
+    });
+  }
+};
+</script>
+
 <style scoped>
 /* Fundo gradiente e sombras suaves */
 .custom-navbar {
-  background: linear-gradient(45deg, rgba(34, 34, 34, 0.1), rgba(16, 16, 16, 0.1));
-  backdrop-filter: blur(8px);
+  background: linear-gradient(45deg, rgba(34, 34, 34, 0.0), rgba(16, 16, 16, 0.0));
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  
 }
 
 .custom-navbar .navbar-brand .logo {
   height: 100px; 
   width: auto;
   border-radius: 20px;
-  border: 2px solid #ffffff;
   transition: transform 0.3s ease;
 }
 
@@ -150,9 +176,51 @@
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
+  
 }
 
 .custom-toggler:focus {
   box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+  
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    background: #424242;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0; /* Reduz o espaço interno da navbar */
+  }
+
+  .custom-navbar .navbar-brand .logo {
+    height: 60px; /* Reduz o tamanho do logo para mobile */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Alinha os itens verticalmente */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* Reduz o tamanho da fonte para mobile */
+    padding: 0.5rem 1rem; /* Ajustado para fornecer mais espaço lateral */
+    text-align: left; /* Alinhamento à esquerda para melhor legibilidade */
+    margin: 0;
+    width: 100%; /* Garantir que cada item ocupa toda a largura */
+    color: white;
+  }
+
+  .navbar-collapse {
+    transition: height 0.35s ease;
+    max-height: 0; /* Começa com altura zero */
+    overflow: hidden;
+  }
+
+  .navbar-collapse.show {
+    max-height: 100vh; /* Aumenta a altura quando aberto */
+  }
+
+  /* Ajuste adicional para o menu no mobile */
+  .navbar-nav .nav-item {
+    margin-bottom: 5px;
+  }
 }
 </style>
