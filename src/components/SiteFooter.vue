@@ -13,7 +13,7 @@
         <div class="footer-info">
           <div class="logo-container">
             <img
-              src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/Gemini_Generated_Image_xlzfyaxlzfyaxlzf.jpg?raw=true"
+              src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/logoFerracin.png?raw=true"
               alt="Logo Leds Tattoo" class="footer-logo" />
             <p class="slogan">FERRACIN TATTO</p>
           </div>
