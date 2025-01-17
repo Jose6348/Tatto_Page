@@ -44,7 +44,6 @@
     </section>
   </main>
 </template>
-
 <script>
 export default {
   name: "MyEstudio",
@@ -88,7 +87,6 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 .estudio-page {
   background-color: #000;
@@ -98,49 +96,41 @@ export default {
   padding: 9em 20px;
   margin-top: 0;
 }
-
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
 }
-
 .estudio-description {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 40px;
 }
-
 .estudio-info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
-
 .info-section {
   width: 48%;
 }
-
 .info-section h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: #d9b681;
 }
-
 .info-section p {
   font-size: 1rem;
   line-height: 1.6;
 }
-
 .estudio-images {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
-
 .estudio-images img {
   width: 30%;
   height: auto;
@@ -148,51 +138,42 @@ h1 {
   margin: 10px;
   border-radius: 5px;
 }
-
 /* Estilo para a seção de história */
 .history-section {
   margin-bottom: 40px;
 }
-
 .history-section h1 {
   margin-bottom: 30px;
 }
-
 .timeline {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
-
 .timeline span {
   color: #d9b681;
   font-size: 0.9rem;
   margin-right: 10px;
 }
-
 .history-content {
   text-align: left;
 }
-
 .history-content h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #d9b681;
 }
-
 .history-content p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 15px;
 }
-
 .history-image {
   margin-top: 20px;
   text-align: center;
 }
-
 .history-image img {
   width: 80%;
   max-width: 400px;
@@ -200,7 +181,6 @@ h1 {
   border-radius: 10px;
   padding: 10px;
 }
-
 .timeline span {
   color: #d9b681;
   font-size: 0.9rem;
@@ -208,46 +188,41 @@ h1 {
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
 .timeline span:hover, .timeline span.active {
   color: #fff;
 }
-
 @media (max-width: 768px) {
   .estudio-info {
     flex-direction: column;
   }
-
   .info-section {
     width: 100%;
     margin-bottom: 20px;
   }
-
   .estudio-images img {
     width: 45%;
   }
-
   h1 {
     font-size: 2rem;
   }
-
   .estudio-description {
     font-size: 1rem;
   }
-
   .timeline {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas para alinhar duas datas lado a lado */
+    gap: 10px; /* Espaçamento entre as datas */
   }
-
   .timeline span {
-    margin-bottom: 5px;
+    text-align: center; /* Centraliza o texto dentro de cada célula */
+    display: block; /* Garante que cada ano ocupe uma linha inteira */
+    padding: 5px;
+    border: 1px solid #d9b681; /* Adiciona uma borda para melhor visualização */
+    border-radius: 5px;
   }
-
   .history-content h2 {
     font-size: 1.5rem;
   }
-
   .history-image img {
     width: 100%;
   }
