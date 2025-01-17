@@ -30,13 +30,13 @@ export default {
 .hero-section {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinhar à esquerda */
+  justify-content: flex-start;
   min-height: 100vh;
-  text-align: left; /* Alinhar o texto à esquerda */
+  text-align: left;
   color: #fff;
   position: relative;
   overflow: hidden;
-  padding: 100px 20px; /* Adicionar padding */
+  padding: 20px; /* Ajustado para telas menores */
 }
 
 .background-video {
@@ -52,33 +52,56 @@ export default {
 .hero-content {
   padding: 20px;
   z-index: 1;
-  max-width: 800px; /* Limitar a largura máxima do conteúdo */
-  margin-left: 50px; /* Adicionar margem à esquerda */
+  max-width: 800px;
+  margin-left: 20px; /* Reduzido para telas menores */
+  width: 100%; /* Para ocupar toda a largura em telas pequenas */
 }
 
 .hero-content h1 {
-  font-size: 3rem; /* Ajustar o tamanho da fonte */
+  font-size: 2rem; /* Reduzido para telas menores */
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #d9b681; /* Cor do título */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra no texto */
+  color: #d9b681;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: #d9b681; /* Cor do parágrafo */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra no texto */
+  font-size: 1.2rem; /* Reduzido para telas menores */
+  margin-bottom: 1rem;
+  color: #d9b681;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .btn-outline-light {
-  border-color: #d9b681; /* Cor da borda do botão */
-  color: #d9b681; /* Cor do texto do botão */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no botão */
+  border-color: #d9b681;
+  color: #d9b681;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1rem; /* Ajustado para telas menores */
+  padding: 10px 20px; /* Ajustado para telas menores */
 }
 
 .btn-outline-light:hover {
   background-color: #d9b681;
   color: #fff;
+}
+
+/* Media queries para melhorar a responsividade em dispositivos móveis */
+@media (max-width: 768px) {
+  .hero-content {
+    margin-left: 0; /* Remove a margem lateral em telas pequenas */
+    padding: 10px; /* Reduz o preenchimento interno */
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem; /* Ajuste adicional para telas muito pequenas */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Ajuste adicional para telas muito pequenas */
+  }
+
+  .hero-section {
+    padding: 10px; /* Ajusta o preenchimento para telas menores */
+  }
 }
 </style>
