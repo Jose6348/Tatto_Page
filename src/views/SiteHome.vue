@@ -13,20 +13,17 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: 'SiteHome'
 };
 </script>
-
 <style scoped>
 .home-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
 .hero-section {
   display: flex;
   align-items: center;
@@ -38,7 +35,6 @@ export default {
   overflow: hidden;
   padding: 20px; /* Ajustado para telas menores */
 }
-
 .background-video {
   position: absolute;
   top: 0;
@@ -48,7 +44,6 @@ export default {
   object-fit: cover;
   z-index: -1;
 }
-
 .hero-content {
   padding: 20px;
   z-index: 1;
@@ -56,7 +51,6 @@ export default {
   margin-left: 20px; /* Reduzido para telas menores */
   width: 100%; /* Para ocupar toda a largura em telas pequenas */
 }
-
 .hero-content h1 {
   font-size: 2rem; /* Reduzido para telas menores */
   font-weight: bold;
@@ -64,14 +58,12 @@ export default {
   color: #d9b681;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-
 .hero-content p {
   font-size: 1.2rem; /* Reduzido para telas menores */
   margin-bottom: 1rem;
   color: #d9b681;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-
 .btn-outline-light {
   border-color: #d9b681;
   color: #d9b681;
@@ -79,29 +71,39 @@ export default {
   font-size: 1rem; /* Ajustado para telas menores */
   padding: 10px 20px; /* Ajustado para telas menores */
 }
-
 .btn-outline-light:hover {
   background-color: #d9b681;
   color: #fff;
 }
-
 /* Media queries para melhorar a responsividade em dispositivos móveis */
 @media (max-width: 768px) {
   .hero-content {
     margin-left: 0; /* Remove a margem lateral em telas pequenas */
     padding: 10px; /* Reduz o preenchimento interno */
   }
-
   .hero-content h1 {
     font-size: 1.5rem; /* Ajuste adicional para telas muito pequenas */
   }
-
   .hero-content p {
     font-size: 1rem; /* Ajuste adicional para telas muito pequenas */
   }
-
   .hero-section {
     padding: 10px; /* Ajusta o preenchimento para telas menores */
+    padding-bottom: 18em;
   }
 }
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
