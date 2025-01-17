@@ -38,19 +38,16 @@
           </div>
         </form>
         <div class="whatsapp-button">
-          <a href="https://wa.me/5519971652715" target="_blank" class="btn-whatsapp">Agende sua tatto pelo Whatsapp</a>
-        </div>
+          <a href="https://wa.me/5519971652715?text=Olá!%20Gostaria%20de%20agendar%20uma%20tatuagem." target="_blank" class="btn-whatsapp">Agende sua tatto pelo Whatsapp</a>        </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "MyContato",
 };
 </script>
-
 <style scoped>
 .contact-page {
   background: #000 url('https://via.placeholder.com/1500') no-repeat center center/cover;
@@ -63,46 +60,39 @@ export default {
   justify-content: center;
   align-items: center;
 }
-
 .container {
   max-width: 1000px;
   width: 100%;
   margin-top: 7em;
 }
-
 .page-title {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.5rem;
   font-weight: bold;
 }
-
 .contact-form-container {
   background: rgba(0, 0, 0, 0.7);
   padding: 30px;
   border-radius: 10px;
   width: 100%;
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
 }
-
 .form-group {
   margin-bottom: 20px;
 }
-
 .form-label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+  text-align: start;
 }
-
 .required {
   color: red;
 }
-
 .form-input,
 .form-textarea {
   width: 100%;
@@ -115,34 +105,27 @@ export default {
   color: white;
   background-color: #000;
 }
-
 .form-textarea {
   min-height: 150px;
   resize: vertical;
 }
-
 .form-input::placeholder,
 .form-textarea::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-
 .checkbox-group {
   display: flex;
   align-items: center;
 }
-
 .form-checkbox {
   margin-right: 10px;
 }
-
 .form-label-checkbox {
   font-size: 0.9rem;
 }
-
 .submit-group {
-  text-align: center;
+  text-align: start;
 }
-
 .form-button {
   background-color: #f5b74f;
   color: #fff;
@@ -154,16 +137,13 @@ export default {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .form-button:hover {
   background-color: #e0a80d;
 }
-
 .whatsapp-button {
   text-align: center;
   margin-top: 20px;
 }
-
 .btn-whatsapp {
   background-color: #25D366;
   color: white;
@@ -173,22 +153,18 @@ export default {
   display: inline-block;
   font-size: 1rem;
 }
-
 /* Responsividade */
 @media (max-width: 768px) {
   .contact-form-container {
     padding: 20px;
   }
-
   .page-title {
     font-size: 2rem;
   }
-
   .form-input,
   .form-textarea {
     font-size: 0.9rem;
   }
-
   .form-button {
     font-size: 1rem;
   }
