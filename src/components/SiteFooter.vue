@@ -15,17 +15,17 @@
             <img
               src="https://raw.githubusercontent.com/Jose6348/Images_Projects/5329324e34ecd170d149d61978c4127fd4279c96/Tatto_page/logoFerracin.svg"
               alt="Logo Leds Tattoo" class="footer-logo" />
-            <p class="slogan">FERRACIN TATTO</p>
+            <p class="slogan">FERRACIN TATTOO</p>
           </div>
           <div class="contact-info">
             <div class="info-group">
               <h4 class="info-title">Onde Estamos</h4>
               <p class="info-text">
-                <font-awesome-icon icon="fa-solid fa-map-marker-alt" class="info-icon" /> Avenida Ibirapuera, 3478
+                <font-awesome-icon icon="fa-solid fa-map-marker-alt" class="info-icon" /> Rua Antônio Domingos Eufrosino de Souza, 797
               </p>
-              <p class="info-text">Moema, São Paulo - SP</p>
+              <p class="info-text">Jardim Sao Pedro, Araras - SP</p>
               <p class="info-text">
-                <font-awesome-icon icon="fa-solid fa-search" class="info-icon" /> CEP 04028-003
+                <font-awesome-icon icon="fa-solid fa-search" class="info-icon" /> CEP 13605-173
               </p>
             </div>
             <div class="info-group">
