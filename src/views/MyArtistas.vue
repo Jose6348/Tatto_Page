@@ -32,6 +32,7 @@
             <img src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/tatto%20Projeto.jpg?raw=true" alt="Tattoo 1" />
             <img src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/tatto%20Projeto%201.jpg?raw=true" alt="Tattoo 2" />
             <img src="https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/tatto%20Projeto%202.jpg?raw=true" alt="Tattoo 3" />
+            
             <!-- Adicione mais imagens conforme necessário -->
           </div>
         </div>
@@ -44,7 +45,7 @@
             <p class="testimonial-author">- José Jorge</p>
           </div>
           <div class="testimonial">
-            <p>"Profissionalismoe criatividade em cada detalhe. Recomendo fortemente!"</p>
+            <p>"Profissionalismo e criatividade em cada detalhe. Recomendo fortemente!"</p>
             <p class="testimonial-author">- Vinicius Rossi</p>
           </div>
         </div>
@@ -87,7 +88,7 @@ export default {
 
 .artists-page {
   width: 100%;
-  max-width: 1900px;
+  max-width: 2160px;
   height: auto;
   margin: 0 auto;
   padding-top: 7em;
@@ -120,7 +121,7 @@ export default {
 
 .artist-image-container {
   position: relative;
-  width: 300px;
+  width: 500px;
   height: auto;
   margin-right: 40px;
 }
