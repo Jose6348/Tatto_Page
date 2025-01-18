@@ -49,7 +49,7 @@ export default {
   name: "MyEstudio",
   data() {
     return {
-      anos: ['1977', '1982', '1984', '1990', '1993', '1994', '1999', '2002', '2007', '2009', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2021'],
+      anos: ['1977', '1982', '1984', '1990', '1993', '1994', '1999'],
       anoSelecionado: '1977',
       historias: {
         '1977': {
@@ -92,7 +92,7 @@ export default {
   background-color: #000;
   color: white;
   width: 100%;
-  max-width: 1900px;
+  max-width: 2160px;
   padding: 9em 20px;
   margin-top: 0;
 }
