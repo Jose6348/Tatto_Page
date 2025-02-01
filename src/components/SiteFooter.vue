@@ -21,7 +21,7 @@
             <div class="info-group">
               <h4 class="info-title">Onde Estamos</h4>
               <p class="info-text">
-                <font-awesome-icon icon="fa-solid fa-map-marker-alt" class="info-icon" /> Rua Antônio Domingos Eufrosino de Souza, 797
+                <font-awesome-icon icon="fa-solid fa-map-marker-alt" class="info-icon" /> Rua Antônio Domingos Eufrosino de Souza, 787
               </p>
               <p class="info-text">Jardim Sao Pedro, Araras - SP</p>
               <p class="info-text">
