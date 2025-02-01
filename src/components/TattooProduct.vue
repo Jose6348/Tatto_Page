@@ -7,7 +7,7 @@
       <h5 class="card-title">{{ product.name }}</h5>
       <p v-if="product.description" class="card-text">{{ product.description }}</p>
       <div class="card-actions">
-        <a href="#" class="btn btn-primary" @click="openWhatsApp(product)">Saiba Mais</a>
+        <a href="#" class="btn btn-dark-red-gradient" @click="openWhatsApp(product)">Solicitar orçamento</a>
       </div>
     </div>
   </div>
@@ -42,7 +42,8 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: linear-gradient(to right, #333333, #000000); /* Gradiente de cinza escuro para preto */
+  background: linear-gradient(to right, #333333, #000000);
+  /* Gradiente de cinza escuro para preto */
   margin: 10px 0;
 }
 
@@ -52,7 +53,8 @@ export default {
 }
 
 .img-container {
-  height: 350px; /* Aumentando a altura para uma imagem mais proeminente */
+  height: 350px;
+  /* Aumentando a altura para uma imagem mais proeminente */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +67,8 @@ export default {
 .card-img-top {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Cover para preencher todo o espaço */
+  object-fit: cover;
+  /* Cover para preencher todo o espaço */
 }
 
 .card-body {
@@ -102,6 +105,40 @@ export default {
   font-weight: bold;
   transition: all 0.3s ease;
   text-decoration: none;
+}
+
+.btn-dark-red-gradient {
+  /* Definindo um gradiente linear de vermelho escuro */
+  background: linear-gradient(to right, #8B0000, #660000);
+  /* Cores em hexadecimal: #8B0000 é um vermelho mais escuro e #660000 é ainda mais escuro */
+  
+  /* Removendo estilo de botão padrão */
+  border: none;
+  
+  /* Estilizando o texto */
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  /* Ajustando o espaçamento interno */
+  padding: 10px 20px;
+  
+  /* Ajustando a borda arredondada */
+  border-radius: 25px;
+  
+  /* Adicionando uma sombra para dar um efeito de profundidade */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* Efeito hover para interatividade */
+  transition: all 0.3s ease;
+}
+
+.btn-dark-red-gradient:hover {
+  /* Aumentando um pouco o botão ao passar o mouse */
+  transform: scale(1.05);
+  /* Intensificando o gradiente no hover */
+  background: linear-gradient(to right, #730000, #550000);
 }
 
 .btn-primary:hover {
