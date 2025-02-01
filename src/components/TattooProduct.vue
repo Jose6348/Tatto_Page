@@ -5,8 +5,8 @@
     </div>
     <div class="card-body">
       <h5 class="card-title">{{ product.name }}</h5>
-      <p class="card-text">{{ product.description }}</p>
-      <div class="d-flex justify-content-center">
+      <p v-if="product.description" class="card-text">{{ product.description }}</p>
+      <div class="card-actions">
         <a href="#" class="btn btn-primary" @click="openWhatsApp(product)">Saiba Mais</a>
       </div>
     </div>
@@ -35,67 +35,77 @@ export default {
 
 <style scoped>
 .tattoo-card {
-  border: 1px solid #555;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
   height: 100%;
+  background: linear-gradient(to right, #333333, #000000); /* Gradiente de cinza escuro para preto */
+  margin: 10px 0;
 }
 
 .tattoo-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 .img-container {
+  height: 350px; /* Aumentando a altura para uma imagem mais proeminente */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 250px; /* Altura fixa para padronizar */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #f8f8f8;
 }
 
 .card-img-top {
-  max-width: 100%; /* Ajusta a largura da imagem ao container */
-  max-height: 100%; /* Ajusta a altura da imagem ao container */
-  width: auto; /* Largura automática para manter a proporção */
-  height: auto; /* Altura automática para manter a proporção */
-  object-fit: contain; /* A imagem se ajusta ao container sem distorcer */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover para preencher todo o espaço */
 }
 
 .card-body {
+  padding: 1.5rem;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 
 .card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.card-text {
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
-.btn-primary {
-  background-color: #f5b74f;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+.card-text {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.card-actions {
   margin-top: auto;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
-  background-color: #e0a80d;
-}
-
-.d-flex.justify-content-center {
-  padding: 10px;
+  background-color: #2980b9;
+  transform: scale(1.05);
 }
 </style>
