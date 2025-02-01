@@ -3,7 +3,7 @@
     <div class="container">
       <h1 class="page-title">FALE CONOSCO</h1>
       <div class="contact-form-container">
-        <form class="contact-form" action="https://formsubmit.co/jfalasco88@gmail.com" method="POST" enctype="multipart/form-data">
+        <form class="contact-form" action="https://formsubmit.co/gabrielferracin02@gmail.com" method="POST" enctype="multipart/form-data">
           <div class="form-group">
             <label for="name" class="form-label">NOME: <span class="required">*</span></label>
             <input type="text" id="name" name="name" placeholder="Digite seu nome..." required class="form-input" />
@@ -38,7 +38,7 @@
           </div>
         </form>
         <div class="whatsapp-button">
-          <a href="https://wa.me/5519999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20tatuagem." target="_blank" class="btn-whatsapp">Agende sua tatto pelo Whatsapp</a>        </div>
+          <a href="https://wa.me/5519971652715?text=Olá!%20Gostaria%20de%20agendar%20uma%20tatuagem." target="_blank" class="btn-whatsapp">Agende sua tatto pelo Whatsapp</a>        </div>
       </div>
     </div>
   </div>
