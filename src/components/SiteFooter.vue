@@ -31,10 +31,10 @@
             <div class="info-group">
               <h4 class="info-title">Contato</h4>
               <p class="info-text">
-                <font-awesome-icon icon="fa-solid fa-phone" class="info-icon" /> (19) 99999-9999
+                <font-awesome-icon icon="fa-solid fa-phone" class="info-icon" /> (19) 97165-2715
               </p>
               <p class="info-text">
-                <font-awesome-icon icon="fa-solid fa-envelope" class="info-icon" /> contato@ledstattoo.com.br
+                <font-awesome-icon icon="fa-solid fa-envelope" class="info-icon" /> gabrielferracin02@gmail.com
               </p>
             </div>
             <div class="social-links-footer">
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="whatsapp-button-container">
-      <a href="https://wa.me/5519999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20tatuagem." target="_blank" class="whatsapp-button">
+      <a href="https://wa.me/5519971652715?text=Olá!%20Gostaria%20de%20agendar%20uma%20tatuagem." target="_blank" class="whatsapp-button">
         <font-awesome-icon icon="fa-brands fa-whatsapp" />
         <span class=""></span>
       </a>
