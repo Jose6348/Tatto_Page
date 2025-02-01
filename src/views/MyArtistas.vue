@@ -66,7 +66,7 @@ export default {
           foto: "https://github.com/Jose6348/Images_Projects/blob/main/Tatto_page/gabrielferracin-20250115-0001.jpg?raw=true",
           especialidade: "Tatuagens de diversos estilos",
           descricao:
-            "Gabriel é CEO da Ferracin tatto e um experiente tatuador tendo feito diversas artes tanto no Brasil como no Japão, mostrando seu talento para as mais diversas culturas.",
+            "Gabriel é CEO da Ferracin tattoo e um experiente tatuador tendo feito diversas artes tanto no Brasil como no Japão, mostrando seu talento para as mais diversas culturas.",
           instagram: "https://www.instagram.com/ferracin_tattoo/",
           facebook: null,
           portfolio: null,

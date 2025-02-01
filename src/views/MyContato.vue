@@ -38,7 +38,7 @@
           </div>
         </form>
         <div class="whatsapp-button">
-          <a href="https://wa.me/5519971652715?text=Olá!%20Gostaria%20de%20agendar%20uma%20tatuagem." target="_blank" class="btn-whatsapp">Agende sua tatto pelo Whatsapp</a>        </div>
+          <a href="https://wa.me/5519971652715?text=Olá!%20Gostaria%20de%20agendar%20uma%20tatuagem." target="_blank" class="btn-whatsapp">Agende sua Tattoo pelo Whatsapp</a>        </div>
       </div>
     </div>
   </div>
