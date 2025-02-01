@@ -7,7 +7,7 @@
       </video>
       <div class="hero-content text-start"> 
         <h1 class="display-4">PIONEIRISMO E MODERNIDADE <br> EM CADA TRAÇO</h1>
-        <p class="lead">FERRACIN TATTO</p>
+        <p class="lead">FERRACIN TATTOO</p>
         <router-link to="/servicos" class="btn btn-lg btn-outline-light">VEJA NOSSAS TATTOOS</router-link>
       </div>
     </div>
