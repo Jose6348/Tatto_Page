@@ -29,7 +29,7 @@
             <router-link to="/estudio" class="nav-link">O Estúdio</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/servicos" class="nav-link">Serviços</router-link>
+            <router-link to="/servicos" class="nav-link">Tattoos</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/artistas" class="nav-link">Artistas</router-link>
